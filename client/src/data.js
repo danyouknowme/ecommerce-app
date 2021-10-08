@@ -67,10 +67,26 @@ export const popularProducts = [
   },
   {
     id:7,
-    img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
-  },
-  {
-    id:8,
     img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
   },
+  {
+    id: 8,
+    img: "https://i.ibb.co/r6sKLxy/1.png",
+  },
+  {
+    id: 9,
+    img: "https://i.ibb.co/h9br8bF/2.png",
+  },
+  {
+    id: 10,
+    img: "https://i.ibb.co/7ScFqDr/3.png",
+  },
+  {
+    id: 11,
+    img: "https://i.ibb.co/SPc2sky/4.png",
+  },
+  {
+    id: 12,
+    img: "https://o.remove.bg/downloads/42926bc9-b1e3-4374-a19d-0cd2f0379175/%E0%B8%96-removebg-preview.png"
+  }
 ]
