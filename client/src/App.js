@@ -1,13 +1,15 @@
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import ProductList from "./pages/ProductList";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
     <div className="app">
       {/* <Home /> */}
       {/* <ProductList /> */}
-      <Product />
+      {/* <Product /> */}
+      <Register />
     </div>
   )
 }
