@@ -9,8 +9,8 @@ const App = () => {
   return (
     <div className="app">
       {/* <Home /> */}
-      <ProductList />
-      {/* <Product /> */}
+      {/* <ProductList /> */}
+      <Product />
       {/* <Register /> */}
       {/* <Login /> */}
       {/* <Cart /> */}
