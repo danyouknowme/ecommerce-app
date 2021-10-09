@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { popularProducts } from "../data";
-import ProductList from "./ProductList";
+import ProductList from "./ProductItem";
 
 const Container = styled.div`
   padding: 20px;
