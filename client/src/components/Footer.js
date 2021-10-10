@@ -94,16 +94,16 @@ const Footer = () => {
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
-            <Facebook />
+            <Facebook onClick = {() => window.open("https://web.facebook.com/dan.isreal.923/?_rdc=1&_rdr", "_blank")} />
           </SocialIcon>
           <SocialIcon color="E4405F">
-            <Instagram />
+            <Instagram onClick = {() => window.open("https://www.instagram.com/danthanathip/", "_blank")} />
           </SocialIcon>
           <SocialIcon color="55ACEE">
-            <Twitter />
+            <Twitter onClick = {() => window.open("https://twitter.com/dxnnvbvb", "_blank")}  />
           </SocialIcon>
           <SocialIcon color="E60023">
-            <Pinterest />
+            <Pinterest onClick = {() => window.open("https://www.pinterest.com/", "_blank")}  />
           </SocialIcon>
         </SocialContainer>
       </Left>
