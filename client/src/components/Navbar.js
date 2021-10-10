@@ -71,7 +71,7 @@ const MenuItem = styled.div`
   ${mobile({ fontSize: "12px", marginLeft: "10px" })};
 
   &:hover {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: ${(props) => props.type !== "cart" && "1px solid lightgrey"};
   }
 `;
 
@@ -92,7 +92,7 @@ const Navbar = () => {
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>LOG IN</MenuItem>
-          <MenuItem>
+          <MenuItem type="cart">
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
             </Badge>
