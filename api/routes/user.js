@@ -31,13 +31,50 @@ router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
   }
 });
 
+// Get User
+router.get("/find/:userId", verifyTokenAndAdmin, async (req, res) => {
+  try {
+    const user = await User.findById(req.params.userId);
+    const { password, ...others } = user;
+    res.status(200).json(others);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+})
+
 //Get All User
-router.delete("/", verifyTokenAndAdmin, async (req, res) => {
+router.get("/", verifyTokenAndAdmin, async (req, res) => {
   try {
     const users = await User.find();
     res.status(200).json(users);
   } catch (err) {
     res.status(500).json(err);
+  }
+});
+
+// Get User Stats
+router.get("/stats", verifyTokenAndAdmin, async (req, res) => {
+  const date = new Date();
+  const lastYear = new Date(date.setFullYear(date.getFullYear() - 1));
+
+  try {
+    const data = await User.aggregate([
+      { $match: { createAt: { gte: lastYear }}},
+      {
+        $project: {
+          month: { $month: "$createdAt" },
+        }
+      },
+      {
+        $group: {
+          _id: "$month",
+          total: { $sum: 1 },
+        }
+      }
+    ]);
+    res.status(200).json(data);
+  } catch (error) {
+    res.status(500).json(error);
   }
 });
 
