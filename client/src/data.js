@@ -90,6 +90,6 @@ export const popularProducts = [
   },
   {
     id: 12,
-    img: "https://o.remove.bg/downloads/42926bc9-b1e3-4374-a19d-0cd2f0379175/%E0%B8%96-removebg-preview.png"
+    img: "https://i.ibb.co/7ScFqDr/3.png"
   }
 ]
